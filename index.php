@@ -2,41 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div style="position: absolute; transform:translate(500px, 100px);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4 form">
+                <form action="user_data.php" method="POST" >
+                    <h2 class="text-center">Registration Form</h2>
+                    <p class="text-center">It's quick and easy.</p>
+                
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="name" placeholder="Your Name" required >
+                    </div>
 
-        <form method="POST" action='user_data.php'>
-             <label for="name">
-            Name <br><input type="text" name="name">
-             </label> <br><br>
+                    <div class="form-group">
+                        <input class="form-control" type="email" name="email" placeholder="Email Address" required >
+                    </div>
 
-            <label for="email">
-            Email <br><input type="email" name="email">
-            </label> <br><br>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="dob" placeholder="Date of birth" required>
+                    </div>
 
-            <label for="dob">
-            Date of Birth <br><input type="text" name="dob">
-            </label> <br><br>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="gender" placeholder="Your gender" required>
+                    </div>
 
-            <label for="gender">
-            Gender <br> <input type="text" name="gender">
-            </label> <br><br>
-
-            <label for="country">
-            Country <br><input type="text" name="country">
-            </label> <br><br>
-            <button type="submit">submit</button>
-         </form>
-         
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="country" placeholder="Your country" required>
+                    </div>
+                    
+                    <div class="form-group" >
+                        <button type="submit" class="form-control button" >Register</button> 
+                    </div>
+            
+                </form>
+            </div>
+        </div>
     </div>
 </body>
-</html>
-
-
-
-
-
+ </html>
